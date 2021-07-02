@@ -6,6 +6,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       # This action installs the node software package on the runner
-      - uses: actions/setup-node@v2
-      - run: npm install -g bats
+      - uses: actions/setup-node@v2.2.0
+      - run: sudo npm install -g bats
       - run: bats -v
